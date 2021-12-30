@@ -7,9 +7,9 @@ engines:
     enabled: true
     checks:
       similar-code:
-        enabled: false
-        
-exclude_parterns:
+        enabled: true
+
+exclude_patterns:
   - "node_modules/"
   - ".nyc_output"
   - "coverage"

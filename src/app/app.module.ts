@@ -104,7 +104,7 @@ import { HealthController } from 'src/health/health.controller';
     CommonModule,
     TerminusModule,
   ],
-  controllers: [AppController, HealthController],
+  controllers: [AppController],
   providers: [
     AppService,
     {
