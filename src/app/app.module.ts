@@ -1,5 +1,5 @@
 import { CacheModule, Module } from '@nestjs/common';
-import { TypeOrmModule, TypeOrmModuleAsyncOptions, TypeOrmModuleOptions } from '@nestjs/typeorm';
+import { TypeOrmModule } from '@nestjs/typeorm';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { APP_GUARD, APP_INTERCEPTOR } from '@nestjs/core';
@@ -12,12 +12,17 @@ import { AuthModule } from '../modules/auth/auth.module';
 import { UserModule } from '../modules/user';
 import { LoggingInterceptor } from '../modules/common/interceptor/logging.interceptor';
 import { RolesGuard } from '../modules/common/guard/roles.guard';
+import { LoggerModule } from 'nestjs-pino';
+import { TerminusModule } from '@nestjs/terminus';
+import { HealthController } from 'src/health/health.controller';
+
 @Module({
   imports: [
     ConfigModule.forRoot({
       ignoreEnvFile: process.env.NODE_ENV === 'production',
       isGlobal: true,
     }),
+    LoggerModule.forRoot(),
     TypeOrmModule.forRoot({
       type: 'postgres',
       host: 'localhost',
@@ -97,8 +102,9 @@ import { RolesGuard } from '../modules/common/guard/roles.guard';
     AuthModule,
     UserModule,
     CommonModule,
+    TerminusModule,
   ],
-  controllers: [AppController],
+  controllers: [AppController, HealthController],
   providers: [
     AppService,
     {

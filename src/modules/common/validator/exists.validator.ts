@@ -47,6 +47,7 @@ export function Exists<E>(
   constraints: Partial<ExistsValidationConstraints<E>>,
   validationOptions?: ValidationOptions,
 ) {
+  // eslint-disable-next-line @typescript-eslint/ban-types
   return function (object: Object, propertyName: string) {
     registerDecorator({
       target: object.constructor,

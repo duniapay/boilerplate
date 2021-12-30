@@ -33,6 +33,8 @@
   </a>
 </h1>
 
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+
 ## Features
 
 This is a NestJS boilerplate code with preconfigured libraries and packages with the following features:
@@ -54,6 +56,7 @@ This is a NestJS boilerplate code with preconfigured libraries and packages with
 ### Without Docker
 
 - Create .env file with command `cp .env.example .env` and replace with your own env variable
+- `yarn global add commitizen git-cz`
 - `yarn install`
 - `yarn start` (Your API will be exposed through port 3000)
 

@@ -1,0 +1,7 @@
+{
+    "name": "Boilerplate",
+    "description": "A Boilerplate Node.js app using NestJs",
+    "repository": "https://github.com/heroku/node-js-getting-started",
+    "logo": "https://node-js-sample.herokuapp.com/node.png",
+    "keywords": ["node", "express", "static"]
+}

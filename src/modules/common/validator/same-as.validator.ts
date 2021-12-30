@@ -4,6 +4,7 @@ export function SameAs(
   property: string,
   validationOptions?: ValidationOptions,
 ) {
+  // eslint-disable-next-line @typescript-eslint/ban-types
   return function (object: Object, propertyName: string) {
     registerDecorator({
       name: 'sameAs',

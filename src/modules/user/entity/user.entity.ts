@@ -76,6 +76,7 @@ export class UserEntity {
    * Omit password from query selection
    */
   toJSON() {
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const { password, ...self } = this;
     return self;
   }
