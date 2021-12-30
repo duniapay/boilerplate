@@ -10,15 +10,14 @@
 <img src="https://img.shields.io/badge/nginx-%23009639.svg?style=for-the-badge&logo=nginx&logoColor=white" width="70">
 <img src="https://img.shields.io/badge/nestjs-%23E0234E.svg?style=for-the-badge&logo=nestjs&logoColor=white" width="73">
 <img src="https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white" width="90">
+<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://badge.fury.io/js/%40nestjs%2Fcore.svg" alt="NPM Version" /></a>
 <img src="https://img.shields.io/badge/redis-%23DD0031.svg?style=for-the-badge&logo=redis&logoColor=white" width="70">
 <img src="https://img.shields.io/badge/-jest-%23C21325?style=for-the-badge&logo=jest&logoColor=white" width="60">
-<a href='https://coveralls.io/github/duniapay/boilerplate?branch=main'><img src='https://coveralls.io/repos/github/duniapay/boilerplate/badge.svg?branch=main' alt='Coverage Status' /></a>
 <br/>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://badge.fury.io/js/%40nestjs%2Fcore.svg" alt="NPM Version" /></a>
 <a href="https://codeclimate.com/github/duniapay/boilerplate/maintainability"><img src="https://api.codeclimate.com/v1/badges/03aa823a219385c42bec/maintainability" /></a>
+<a href='https://coveralls.io/github/duniapay/boilerplate?branch=main'><img src='https://coveralls.io/repos/github/duniapay/boilerplate/badge.svg?branch=main' alt='Coverage Status' /></a>
 <a href="https://www.gnu.org/licenses/gpl-3.0" target="_blank"><img src="https://img.shields.io/badge/License-GPLv3-blue.svg" alt="Package License" /></a>
 <br/>
-<img src="https://cdn.shortpixel.ai/client/q_glossy,ret_img,w_560/https://adscom.biz/wp-content/uploads/2017/02/ABA-logo-no-padding.png" width="80" alt="ABA" />
 </p>
 
 <h1>Scalable NestJS v8 Boilerplate
