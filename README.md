@@ -15,12 +15,12 @@
 <img src="https://img.shields.io/badge/-jest-%23C21325?style=for-the-badge&logo=jest&logoColor=white" width="60">
 <br/>
 <a href="https://codeclimate.com/github/duniapay/boilerplate/maintainability"><img src="https://api.codeclimate.com/v1/badges/03aa823a219385c42bec/maintainability" /></a>
-<a href='https://coveralls.io/github/duniapay/boilerplate?branch=main'><img src='https://coveralls.io/repos/github/duniapay/boilerplate/badge.svg?branch=main' alt='Coverage Status' /></a>
+<a href="https://codeclimate.com/github/duniapay/boilerplate/test_coverage"><img src="https://api.codeclimate.com/v1/badges/03aa823a219385c42bec/test_coverage" /></a>
 <a href="https://www.gnu.org/licenses/gpl-3.0" target="_blank"><img src="https://img.shields.io/badge/License-GPLv3-blue.svg" alt="Package License" /></a>
 <br/>
 </p>
 
-<h1>Scalable NestJS v8 Boilerplate
+<h1>Scalable Microservice Boilerplate
   <a
     href="http://nestjs.com/"
     target="blank"
