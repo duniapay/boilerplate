@@ -18,6 +18,9 @@
 <a href='https://coveralls.io/github/duniapay/boilerplate?branch=main'><img src='https://coveralls.io/repos/github/duniapay/boilerplate/badge.svg?branch=main' alt='Coverage Status' /></a>
 <a href="https://www.gnu.org/licenses/gpl-3.0" target="_blank"><img src="https://img.shields.io/badge/License-GPLv3-blue.svg" alt="Package License" /></a>
 <br/>
+[![Known Vulnerabilities](https://snyk.io/test/github/fastify/fastify/badge.svg)](https://snyk.io/test/github/fastify/fastify)
+[![CI](https://github.com/fastify/fastify/workflows/ci/badge.svg)](https://github.com/fastify/fastify/actions/workflows/ci.yml)
+
 </p>
 
 <h1>Scalable NestJS v8 Boilerplate
