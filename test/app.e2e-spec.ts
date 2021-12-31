@@ -6,7 +6,7 @@ import { AppModule } from '../src/app/app.module';
 import { HealthController } from 'src/health/health.controller';
 import { TestLogger } from './mocks/logger.mock';
 
-describe('AppController (e2e)', () => {
+describe('E2E', () => {
   let app: INestApplication;
 
   beforeAll(async () => {
