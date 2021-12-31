@@ -17,7 +17,6 @@
 <a href="https://codeclimate.com/github/duniapay/boilerplate/maintainability"><img src="https://api.codeclimate.com/v1/badges/03aa823a219385c42bec/maintainability" /></a>
 <a href='https://coveralls.io/github/duniapay/boilerplate?branch=main'><img src='https://coveralls.io/repos/github/duniapay/boilerplate/badge.svg?branch=main' alt='Coverage Status' /></a>
 <a href="https://www.gnu.org/licenses/gpl-3.0" target="_blank"><img src="https://img.shields.io/badge/License-GPLv3-blue.svg" alt="Package License" /></a>
-<a href="https://snyk.io/test/github/duniapay/boilerplate" target="_blank" src="https://snyk.io/test/github/duniapay/boilerplate.svg"></a>
 <br/>
 </p>
 
