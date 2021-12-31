@@ -14,12 +14,13 @@ on:
 loadTest:
   name: LoadTest
   runs-on: ubuntu-latest
+  container: docker://loadimpact/k6:latest
 
   steps:
     - name: Checkout
-      uses: actions/checkout@v1
+      uses: actions/checkout@v2
+    - name: Tests
+        env:
+          K6_CLOUD_TOKEN: ${{ secrets.K6_CLOUD_TOKEN }}
+      run: k6 cloud perf/load_test.js
 
-    - name: Run local k6 test
-      uses: k6io/action@v0.1
-      with:
-        filename: perf/load_test.js
