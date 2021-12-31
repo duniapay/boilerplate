@@ -1,4 +1,4 @@
-name: CI
+name: Test Coverage
 
 concurrency: 
   group: CI-${{ github.head_ref }}
@@ -8,6 +8,11 @@ on:
   push:
     branches:
       - main
+    paths:
+      - src/*
+      - test/*
+      - '*.json'
+      - yarn.lock
     tags:
       - '!*' # Do not execute on tags
   pull_request:
@@ -28,7 +33,7 @@ jobs:
     - run: yarn test
   coverage:
     needs: [ test ]
-    name: coverage
+    name: Report Coverage
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
