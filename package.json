@@ -15,7 +15,7 @@
     "lint": "eslint \"{src,apps,libs,test}/**/*.ts\" --fix",
     "test": "jest --verbose",
     "test:watch": "jest --watch",
-    "test:coverage": "jest --coverage",
+    "coverage": "jest --coverage",
     "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
     "test:e2e": "jest --config ./test/jest-e2e.json",
     "ts-typeorm": "ts-node -r tsconfig-paths/register ./node_modules/.bin/typeorm",
@@ -26,7 +26,6 @@
     "migration:revert": "yarn ts-typeorm migration:revert",
     "prepare": "husky install",
     "coveralls": "cat ./coverage/lcov.info | ./node_modules/.bin/coveralls",
-    "coverage": "nyc report --reporter=text-lcov | coveralls && nyc report --reporter=lcov"
   },
   "dependencies": {
     "@nest-auth/redis": "^0.3.0",
