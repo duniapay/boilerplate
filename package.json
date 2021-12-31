@@ -25,7 +25,7 @@
     "migration:run": "yarn ts-typeorm migration:run",
     "migration:revert": "yarn ts-typeorm migration:revert",
     "prepare": "husky install",
-    "coveralls": "cat ./coverage/lcov.info | ./node_modules/.bin/coveralls",
+    "coveralls": "cat ./coverage/lcov.info | ./node_modules/.bin/coveralls"
   },
   "dependencies": {
     "@nest-auth/redis": "^0.3.0",
