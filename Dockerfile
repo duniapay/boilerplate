@@ -1,4 +1,4 @@
-FROM node:14.15.0
+FROM node:14.18.0
 
 WORKDIR /app
 ENV NODE_ENV development
