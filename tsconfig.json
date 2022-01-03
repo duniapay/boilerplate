@@ -11,6 +11,14 @@
     "outDir": "./dist",
     "baseUrl": "./",
     "incremental": true,
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "paths": {
+      "@backend/tools": [
+        "libs/tools/src"
+      ],
+      "@backend/tools/*": [
+        "libs/tools/src/*"
+      ]
+    }
   }
 }
