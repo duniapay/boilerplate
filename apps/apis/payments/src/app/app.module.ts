@@ -5,17 +5,15 @@ import { AppService } from './app.service';
 import { APP_GUARD, APP_INTERCEPTOR } from '@nestjs/core';
 import * as redisStore from 'cache-manager-redis-store';
 import { ConfigModule, ConfigService } from '@nestjs/config';
-import { JwtAuthGuard } from '../modules/auth/jwt-guard';
-import { AuthModule } from '../modules/auth/auth.module';
-import { UserModule } from '../modules/transactions';
 import { LoggerModule } from 'nestjs-pino';
 import { TerminusModule } from '@nestjs/terminus';
-import { CommonModule } from '../../../../libs/tools/src/modules/common/common.module';
-import { RolesGuard } from '../../../../libs/tools/src/modules/common/guard/roles.guard';
-import { LoggingInterceptor } from '../../../../libs/tools/src/modules/common/interceptor/logging.interceptor';
-import { TimeoutInterceptor } from '../../../../libs/tools/src/modules/common/interceptor/timeout.interceptor';
-import { HealthController } from '../../../../libs/tools/src/health/health.controller';
 import { RavenInterceptor, RavenModule } from 'nest-raven';
+import { EnvironmentConfigModule } from './infrastructure/config/environment-config/environment-config.module';
+import { HealthController } from '@backend/tools/health/health.controller';
+import { CommonModule } from '@backend/tools/modules/common/common.module';
+import { TimeoutInterceptor } from '@backend/tools/modules/common/interceptor/timeout.interceptor';
+import { LoggingInterceptor } from '@backend/tools/modules/common/interceptor/logging.interceptor';
+import { RepositoriesModule } from './infrastructure/repositories/repositories.module';
 
 @Module({
   imports: [
@@ -101,10 +99,13 @@ import { RavenInterceptor, RavenModule } from 'nest-raven';
         }
       },
     }),
-    AuthModule,
-    UserModule,
+    // AuthModule,
+    // UserModule,
     CommonModule,
     TerminusModule,
+    EnvironmentConfigModule,
+    TypeOrmModule,
+    RepositoriesModule,
   ],
   controllers: [AppController, HealthController],
   providers: [
@@ -113,10 +114,10 @@ import { RavenInterceptor, RavenModule } from 'nest-raven';
       provide: APP_INTERCEPTOR,
       useValue: new RavenInterceptor(),
     },
-    {
-      provide: APP_GUARD,
-      useClass: JwtAuthGuard,
-    },
+    // {
+    //   provide: APP_GUARD,
+    //   useClass: JwtAuthGuard,
+    // },
     {
       provide: APP_INTERCEPTOR,
       useClass: TimeoutInterceptor,
